@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fontesgerais: Verdana, Geneva, Tahoma, sans-serif; 
+    --fontesdetitulo: "Passion One", cursive;
+    --fontesparacordel: Sriracha, cursive; 
+}
+
+* {
+   margin: 0px;
+   font-size: 1em;
+   
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fontesgerais);
+}
+
+header {
+    
+    padding: 50px 0px;
+
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+h1 {
+   /*
+   Obs.: Parece que usar font-variant faz com que outros fonts que venham depois do font que usam a função var() não vão "Ponto: Não sei se isso incuir shorthands ou mais funções alem da var.".
+   */ 
+   /*
+   text-transform: uppercase;
+   */
+   font-variant: small-caps;
+   font-size: 10vw;
+   font-family: var(--fontesdetitulo)
+   
+}
+section {
+    font-family: var(--fontesparacordel);
+    padding: 10vh 0px 10vh 30px;
+    line-height: 2em;
+    font-size: 3.5vw;
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+section.geral {
+    background-color: white;
+    color:black;
+}
+
+section.fundoimg {
+    background-color: rgb( 51, 51, 51);
+    color: white;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.500);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fundoimg > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba( 0, 0, 0, 0.500);
+    text-shadow: 1px 1px 0px black;
+}
+
+#img1 {
+
+    background-image: url("../imagens/background001.jpg");
+
+}
+
+#img2 {
+    background-image: url("../imagens/background002.jpg");
+}
+
+footer {
+    
+    padding: 10px;
+
+}
